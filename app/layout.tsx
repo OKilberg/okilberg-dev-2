@@ -16,7 +16,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className}
+        style={{
+          backgroundImage: `url('/bg2.png')`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          padding: "16px 0px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          // filter: 'brightness(200%) contrast(0%) saturate(0%)'
+        }}
+      >
+        <nav className="h-[60px] w-[970px] flex">
+          <div className="flex items-center w-[100px]">
+            <span>okilberg.dev</span>
+          </div>
+          <div className="flex-1 flex justify-center items-center font-semibold">
+            <span className="p-5 underline">Home</span>
+            <span className="p-5">Experience</span>
+            <span className="p-5">Projects</span>
+            <span className="p-5">Blog</span>
+          </div>
+          <div className="flex items-center justify-end w-[100px]">
+            <span>Contact</span>
+          </div>
+        </nav>
+        {children}
+        <footer>Footer Section</footer>
+      </body>
     </html>
   );
 }
