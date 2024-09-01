@@ -37,16 +37,16 @@ export default function RootLayout({
           }}
         >
           <nav className="h-[60px] lg:w-[970px] flex w-full max-w-full px-4 lg:p-0 overflow-x-scroll overflow-y-hidden lg:overflow-hidden">
-            <div className="flex items-center w-[100px]">
+            <div className="flex items-center w-[100px] uppercase text-sm tracking-tighter text-gray-700">
               <span>okilberg.dev</span>
             </div>
             <div className="flex-1 flex justify-center items-center font-semibold">
-              <a href="#home" className="p-5 underline">Home</a>
+              <a href="#home" className="p-5 underline underline-offset-4">Home</a>
               <a href="#experience" className="p-5">Experience</a>
               <a href="#projects" className="p-5">Projects</a>
               <a href="#blog" className="p-5">Blog</a>
             </div>
-            <div className="flex items-center justify-end w-[100px]">
+            <div className="flex items-center justify-end w-[100px] font-semibold">
               <span>Contact</span>
             </div>
           </nav>
