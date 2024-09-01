@@ -225,7 +225,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section className="lg:h-[790px] lg:p-0 p-12 w-full overflow-hidden bg-slate-900/[.96] gap-14 flex flex-col justify-center items-center">
+      <section id="projects" className="lg:h-[790px] lg:p-0 p-12 w-full overflow-hidden bg-slate-900/[.96] gap-14 flex flex-col justify-center items-center">
         <h2 className="text-6xl font-bold text-slate-100">Projects</h2>
         <p className="text-lg text-slate-400">My recent projects</p>
         <ul className="flex lg:flex-row flex-col gap-6 justify-start">
