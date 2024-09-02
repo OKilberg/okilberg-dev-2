@@ -11,7 +11,7 @@ import {
 import { GrReactjs } from "react-icons/gr";
 import { HiOutlineViewGridAdd } from "react-icons/hi";
 import { ImHtmlFive } from "react-icons/im";
-import { IoLogoCss3, IoMdRocket } from "react-icons/io";
+import { IoLogoCss3, IoMdCheckmark, IoMdRocket } from "react-icons/io";
 import { IoColorPalette } from "react-icons/io5";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
 
@@ -165,7 +165,7 @@ export default function Home() {
 
       <section className="lg:h-[790px] lg:w-[976px] lg:p-0 p-12 w-full overflow-hidden gap-7 flex flex-col justify-center items-center">
         <article className="flex flex-col gap-14 pb-3">
-          <h2 className="text-6xl font-bold ">About Me</h2>
+          <h2 className="text-6xl font-bold ">About <span className="text-slate-700">Me</span></h2>
           <div className="flex flex-col-reverse lg:flex-row gap-7">
             <aside className="flex flex-col items-center">
               <img
@@ -225,7 +225,10 @@ export default function Home() {
         </article>
       </section>
 
-      <section id="projects" className="lg:h-[790px] lg:p-0 p-12 w-full overflow-hidden bg-slate-900/[.96] gap-14 flex flex-col justify-center items-center">
+      <section
+        id="projects"
+        className="lg:h-[790px] lg:p-0 p-12 w-full overflow-hidden bg-slate-900/[.96] gap-14 flex flex-col justify-center items-center"
+      >
         <h2 className="text-6xl font-bold text-slate-100">Projects</h2>
         <p className="text-lg text-slate-400">My recent projects</p>
         <ul className="flex lg:flex-row flex-col gap-6 justify-start">
@@ -285,8 +288,70 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="h-[790px] w-full bg-slate-500">
-        Experience Section
+      <section id="experience" className="lg:h-[790px] lg:w-[976px] lg:p-0 p-12 w-full overflow-hidden gap-7 flex flex-col justify-center items-center">
+        <article className="flex flex-col gap-14 pb-3">
+          <h2 className="text-6xl font-bold ">Experien<span className="text-slate-700">ce</span></h2>
+          <div className="flex flex-col lg:flex-row gap-7">
+            <ul className="flex w-[295px] flex-col text-lg font-medium py-7">
+              <li className="flex px-6 py-3 border-l-2 border-slate-700 bg-slate-400">
+                <p className="text-slate-900">Oderland</p>
+              </li>
+              <li className="flex px-6 py-3 border-l-2 border-slate-500">
+                <p className="text-slate-600">Yolean</p>
+              </li>
+              <li className="flex px-6 py-3 border-l-2 border-slate-500">
+                <p className="text-slate-600">WeKnowIt</p>
+              </li>
+              <li className="flex px-6 py-3 border-l-2 border-slate-500">
+                <p className="text-slate-600">Consid</p>
+              </li>
+            </ul>
+            <div className="text-xl tracking-wide p-7 border-r border-b border-gray-400">
+              <h3 className="font-semibold">
+                Frontend Developer <span className="text-slate-700">@ Orderland Hosting Services</span>
+              </h3>
+              <p className="text-base mt-3">March 2024 - Present</p>
+              <ul className="flex flex-col gap-4 py-12">
+                <li className="flex gap-2 items-baseline">
+                  <i>
+                    <IoMdCheckmark />
+                  </i>
+                  <p>
+                    Developed and shipped highly interactive web applications
+                    for Oderland using React, Nextjs
+                  </p>
+                </li>
+                <li className="flex gap-2 items-baseline">
+                  <i>
+                    <IoMdCheckmark />
+                  </i>
+                  <p>
+                    Developed and shipped highly interactive web applications
+                    for Oderland using React, Nextjs
+                  </p>
+                </li>
+                <li className="flex gap-2 items-baseline">
+                  <i>
+                    <IoMdCheckmark />
+                  </i>
+                  <p>
+                    Developed and shipped highly interactive web applications
+                    for Oderland using React, Nextjs
+                  </p>
+                </li>
+                <li className="flex gap-2 items-baseline">
+                  <i>
+                    <IoMdCheckmark />
+                  </i>
+                  <p>
+                    Developed and shipped highly interactive web applications
+                    for Oderland using React, Nextjs
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
   );
